@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<!--    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com http://griffis.edumedia.ca  'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content: griffis.edumedia.ca  placeholdit.imgix.net placehold.it ;" />-->
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- Include the compiled Ratchet CSS -->
+    <link href="css/ratchet.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>ReviewR</title>
+</head>
+
+<body>
+    <header class="bar bar-nav"> <a id="btnAdd" class="btn btn-link btn-nav pull-right" href="#addReviewModal">
+                Add Review
+                <span class="icon icon-compose"></span>
+            </a>
+        <h1 class="title">ReviewR</h1> </header>
+    <!--
+        <nav class="bar bar-tab">
+            <a class="tab-item">
+                <span class="icon icon-plus"></span>
+                <span class="tab-label">Add Person</span>
+            </a>
+        </nav>
+        -->
+    <div id="page-reviews" class="content">
+        <!-- read through localStorage for reviews -->
+        <ul class="table-view" id="review-list">
+<!--
+            <li class="table-view-cell media"> <img class="media-object pull-left" src="img/imgTest.png">
+                <div class="media-body"> Item 1
+                    <p>Stars will be here</p>
+                    <a class="navigate-right" href="#detailsReviewModal"> </a>
+                </div>
+            </li>
+-->
+            <!--
+            <li class="table-view-cell media">
+                <a class="navigate-right" href="#detailsReviewModal"> <img class="media-object pull-left" src="img/imgTest.png">
+                    <div class="media-body"> Item 1
+                        <p>Stars will be here</p>
+                    </div>
+                </a>
+            </li>
+-->
+        </ul>
+    </div>
+    <div id="addReviewModal" class="modal">
+        <header class="bar bar-nav">
+            <a id="closeAddReviewModal" class="icon icon-close pull-right"></a>
+            <h1 class="title">Add Review</h1> </header>
+        <div class="content">
+            <div id="addModalContent" class="content-padded">
+                <form id="id-form" class="input-group">
+                    <div class="input-row">
+                        <label>Item:</label>
+                        <input id="item" type="text" placeholder="Item name" /> </div>
+                </form>
+                <div class="rating">
+                    <label>Rating: </label> <span class="star">&nbsp;</span> <span class="star">&nbsp;</span> <span class="star">&nbsp;</span> <span class="star">&nbsp;</span> <span class="star">&nbsp;</span> </div>
+                <!--
+                <ul class="table-view">
+                    <li class="table-view-cell"><img id="imgTest2" src="img/imgTest.png"></li>
+                </ul>
+-->
+                <p id="buttons" class="content-padded">
+                    <!--                    <button id="takePicAddReviewModal" class="btn btn-positive btn-block"> <span class="icon icon-play"></span> Take Picture </button>-->
+                    <button id="btnCancelAddReviewModal" class="btn btn-block"> <span class="icon icon-close"></span> Cancel
+                        <!-- dispatch click to the close button -->
+                    </button>
+                    <button id="btnSaveAddReviewModal" class="btn btn-primary btn-block"> <span class="icon icon-check"></span> Save
+                        <!-- process the info then dispatch click to the close button -->
+                    </button>
+                </p>
+                <!--                </p>-->
+            </div>
+        </div>
+    </div>
+    <div id="detailsReviewModal" class="modal">
+        <header class="bar bar-nav"> <a id="closeDetailReviewModal" class="icon icon-left pull-left" href="#detailsReviewModal">Back</a>
+            <h1 class="title">Review details</h1> </header>
+        <div class="content">
+            <div class="content-padded">
+                <!--
+               <div>
+                   <img id="imgTest" alt="">
+               </div>
+-->
+                <ul id="review-detail-list" class="table-view">
+<!--                    <li class="table-view-cell"><img id="imgInDetailModal" class="media-object pull-left" src="img/imgTest.png"></li>-->
+                    <!--                    <li class="table-view-cell table-view-cell">Item 2</li>-->
+                    <!--                    <li class="table-view-divider"></li>-->
+<!--                    <li class="table-view-cell">Item:</li>-->
+                    <li class="table-view-cell">
+                        <div> <span class="star1">&#x2606; &nbsp;</span> <span class="star1">&#x2606; &nbsp;</span> <span class="star1">&#x2606; &nbsp;</span> <span class="star1">&#x2606; &nbsp;</span> <span class="star1">&#x2606; &nbsp;</span> </div>
+                    </li>
+                </ul>
+                <p class="content-padded">
+                    <button id="btnDeleteDetailReviewModal" class="btn btn-negative btn-block"> <span class="icon icon-close"></span> Delete
+                        <!-- dispatch click to the close button -->
+                    </button>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <!-- include the compiled Ratchet JS -->
+    <script src="js/ratchet.min.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
+<!--
+<header class="bar bar-nav">
+    <button class="btn btn-link btn-nav pull-left" href="#detailsReviewModal"> <span class="icon icon-left-nav"></span> Back </button>
+-->
+<!--
+           <a id = "btnBack" class="btn btn-link btn-nav pull-left" href="index.html">
+                Add Person
+                <span class="icon icon-plus"></span>
+            </a>
+-->
+<!--            <a id="closeDetailReviewModal" class="icon icon-left pull-left" href="#detailsReviewModal">Back</a>-->
+<!--            <h1 class="title">Add Review</h1> </header>-->
+<!--
+
+
+
+
+<!--
+                    <div class="input-row rating">
+                        <label>Rating:</label> <span class="star">&nbsp;</span> <span class="star">&nbsp;</span> <span class="star">&nbsp;</span> <span class="star">&nbsp;</span> <span class="star">&nbsp;</span> </div>
+-->
+<!--
+                    <ul class="table-view rating">
+                        <li class="table-view-cell rating">
+                            <label>Rating:</label> <span class="star">&nbsp;</span> <span class="star">&nbsp;</span> <span class="star">&nbsp;</span> <span class="star">&nbsp;</span> <span class="star">&nbsp;</span> </li>
+                    </ul>
+-->
+<!--
+                    
+                <ul class="table-view">
+                    <li class="table-view-cell rating">
+                           <label>Rating: </label> <span class="star">&nbsp;</span> <span class="star">&nbsp;</span> <span class="star">&nbsp;</span> <span class="star">&nbsp;</span> <span class="star">&nbsp;</span>
+                
+                    
+                    </li>
+        
+                </ul> 
+-->
+<!--                <p class="content-padded">-->

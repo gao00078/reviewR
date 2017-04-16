@@ -1,0 +1,26 @@
+{"teams":[{"id":916,"name":"Ravenclaw"},
+          {"id":12,"name":"Hufflepuff"},
+          {"id":184,"name":"Slytherin"},
+          {"id":663,"name":"Gryffindor"}],
+ 
+ "scores":[
+     {"date":"2017-06-12","games":[{"home":916,"away":12,"home_score":130,"away_score":70},{"home":184,"away":663,"home_score":130,"away_score":160}]},
+     
+    {"date":"2017-06-19","games":[{"home":916,"away":184,"home_score":130,"away_score":200},{"home":12,"away":663,"home_score":40,"away_score":80}]},
+     
+     {"date":"2017-06-26","games":[{"home":916,"away":663,"home_score":80,"away_score":200},{"home":12,"away":184,"home_score":80,"away_score":160}]},
+     
+     {"date":"2017-07-03","games":[{"home":12,"away":916,"home_score":100,"away_score":180},{"home":663,"away":184,"home_score":190,"away_score":110}]},
+     
+     {"date":"2017-07-10","games":[{"home":184,"away":916,"home_score":80,"away_score":160},{"home":663,"away":12,"home_score":150,"away_score":40}]},
+     
+     {"date":"2017-07-17","games":[{"home":663,"away":916,"home_score":50,"away_score":110},{"home":184,"away":12,"home_score":110,"away_score":110}]}
+ ]
+
+}
+
+
+[{"first":"Ahamad","avatar":"m-003.jpg","gender":"male","last":"Nolan","distance":"18km"},
+ {"first":"Yanming","avatar":"m-008.jpg","gender":"male","last":"Brooks","distance":"22km"},
+ {"first":"Raj","avatar":"m-017.jpg","gender":"male","last":"Hitchcock","distance":"21km"},
+ {"first":"Priscilla","avatar":"f-016.jpg","gender":"female","last":"Kubrick","distance":"11km"}]

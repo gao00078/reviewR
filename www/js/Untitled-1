@@ -1,0 +1,200 @@
+[{"id":1490300475055,"fullname":"h","dateOfBirth":"2017-03-23"},{"id":1490300490267,"fullname":"hhh","dateOfBirth":"2017-03-23"}]
+
+[{"people":{"id":1490301400228,"fullname":"j","dateOfBirth":"2017-03-23"}},{"people":{"id":1490301406445,"fullname":"k","dateOfBirth":"2017-03-23"}}]
+
+{"people":[{"id":1490301719548,"fullname":"g","dateOfBirth":"2017-03-23"},{"id":1490301724329,"fullname":"k","dateOfBirth":"2017-03-23"}]}
+
+app.showPageOne();
+
+{"people":[{"id":1490304842956,"fullname":"1","dateOfBirth":"2017-03-23"},{"id":1490304844761,"fullname":"1","dateOfBirth":"2017-03-23"},{"id":1490304873241,"fullname":"2","dateOfBirth":"2017-03-23"},{"id":1490304874431,"fullname":"2","dateOfBirth":"2017-03-23"}]}
+
+{"people":[{"id":1490304842956,"fullname":"1","dateOfBirth":"2017-03-23"},{"id":1490304844761,"fullname":"1","dateOfBirth":"2017-03-23"},{"id":1490304873241,"fullname":"2","dateOfBirth":"2017-03-23"},{"id":1490304874431,"fullname":"2","dateOfBirth":"2017-03-23"},{"id":1490304947640,"fullname":"2","dateOfBirth":"2017-03-23"},{"id":1490304949718,"fullname":"2","dateOfBirth":"2017-03-23"},{"id":1490305076279,"fullname":"2","dateOfBirth":"2017-03-23"},{"id":1490305158756,"fullname":"2","dateOfBirth":"2017-03-23"},{"id":1490306039787,"fullname":"3","dateOfBirth":"2017-03-23"},{"id":1490306058218,"fullname":"3","dateOfBirth":"2017-03-23"}]}
+
+{"people":[{"id":1490304842956,"fullname":"1","dateOfBirth":"2017-03-23"},{"id":1490304844761,"fullname":"1","dateOfBirth":"2017-03-23"},{"id":1490304873241,"fullname":"2","dateOfBirth":"2017-03-23"},{"id":1490304874431,"fullname":"2","dateOfBirth":"2017-03-23"},{"id":1490304947640,"fullname":"2","dateOfBirth":"2017-03-23"},{"id":1490304949718,"fullname":"2","dateOfBirth":"2017-03-23"},{"id":1490305076279,"fullname":"2","dateOfBirth":"2017-03-23"},{"id":1490305158756,"fullname":"2","dateOfBirth":"2017-03-23"},{"id":1490306039787,"fullname":"3","dateOfBirth":"2017-03-23"},{"id":1490306058218,"fullname":"3","dateOfBirth":"2017-03-23"},{"id":1490306110636,"fullname":"4","dateOfBirth":"2017-03-23"}]}
+
+
+
+
+{"people":[{"id":1490306262416,"fullname":"1","dateOfBirth":"2017-03-23"},{"id":1490306282863,"fullname":"2","dateOfBirth":"2017-03-23"}]}
+
+
+{"people":[{"id":1490306262416,"fullname":"1","dateOfBirth":"2017-03-23"},{"id":1490306282863,"fullname":"2","dateOfBirth":"2017-03-23"},{"id":1490306310634,"fullname":"3","dateOfBirth":"2017-03-23"},{"id":1490306323697,"fullname":"4","dateOfBirth":"2017-03-23"}]}
+
+
+
+{"people":[{"id":1490306825291,"fullname":"1","dateOfBirth":"2017-03-23"},{"id":1490306835371,"fullname":"2","dateOfBirth":"2017-03-23"},{"id":1490314576933,"fullname":"3","dateOfBirth":"2017-03-23"}]}
+
+
+
+{"people":[{"id":1490306825291,"fullname":"1","dateOfBirth":"2017-03-23"},{"id":1490306835371,"fullname":"2","dateOfBirth":"2017-03-23"},{"id":1490314576933,"fullname":"3","dateOfBirth":"2017-03-23"},{"id":1490315063438,"fullname":"555555","dateOfBirth":"2017-03-23"},{"id":1490315109107,"fullname":"66666","dateOfBirth":"2017-03-23"}]}
+
+
+
+
+
+
+
+{"people":[{"id":1490322199101,"fullname":"1","dateOfBirth":"2017-03-23"},{"id":1490322207695,"fullname":"2","dateOfBirth":"2017-03-23"}]}
+
+{"people":[{"id":1490322199101,"fullname":"1","dateOfBirth":"2017-03-23"},{"id":1490322207695,"fullname":"2","dateOfBirth":"2017-03-23"}]}
+
+
+{"people":[{"id":1490322199101,"fullname":"1","dateOfBirth":"2017-03-23"},{"id":1490322207695,"fullname":"2","dateOfBirth":"2017-03-23"}]}
+
+{"people":[{"id":1490359509471,"fullname":"1112222","dateOfBirth":"2017-03-24"},{"id":1490359525467,"fullname":"333","dateOfBirth":"2017-03-02"}]}
+
+
+
+{"people":[{"id":1490359509471,"fullname":"11","dateOfBirth":"2017-03-24"},{"id":1490359525467,"fullname":"333","dateOfBirth":"2017-03-02"},{"id":1490360273778,"fullname":"5666","dateOfBirth":"2017-03-17"},{"id":1490360422399,"fullname":"7777","dateOfBirth":"2017-03-08"}]}
+
+
+
+
+
+
+
+{"people":[{"id":1490897460288,"fullname":"www","dateOfBirth":"2017-03-30","ideas":[{"id":1490915185316,"idea":"gg","at":"","url":"www.google.com","cost":""},{"id":1490919023026,"idea":"哦哦哦","at":"","url":"","cost":""}]},
+
+{"id":1490897466827,"fullname":"ttt","dateOfBirth":"2017-03-08","ideas":[]},{"id":1490897472845,"fullname":"uuuu","dateOfBirth":"2017-03-16","ideas":[]}]}
+
+
+
+
+
+
+
+{"people":[{"id":1490897460288,"fullname":"www","dateOfBirth":"2017-03-30","ideas":[{"id":1490915185316,"idea":"gg","at":"","url":"www.google.com","cost":""},{"id":1490919023026,"idea":"哦哦哦","at":"","url":"","cost":""}]},{"id":1490897466827,"fullname":"ttt","dateOfBirth":"2017-03-08","ideas":[]},{"id":1490897472845,"fullname":"uuuu","dateOfBirth":"2017-03-16","ideas":[]}]}
+
+
+
+{"people":[
+{"id":1490927725803,"fullname":"bbbb","dateOfBirth":"2017-03-02","ideas":[]},{"id":1490927716592,"fullname":"aaaa","dateOfBirth":"2017-03-01","ideas":[]},{"id":1490927734318,"fullname":"cccc","dateOfBirth":"2017-03-03","ideas":[]}]}
+
+
+{"people":[
+{"id":1490932605888,"fullname":"aaaa","dateOfBirth":"2017-03-01","monthDay":301,"ideas":[]},{"id":1490932645841,"fullname":"bbb","dateOfBirth":"2017-03-02","monthDay":302,"ideas":[]},{"id":1490932668167,"fullname":"cccc","dateOfBirth":"2017-11-03","monthDay":1103,"ideas":[]}]}
+
+
+{"people":[
+{"id":1490932605888,"fullname":"aaaa","dateOfBirth":"2017-03-01","monthDay":301,"ideas":[]},{"id":1490932645841,"fullname":"bbb","dateOfBirth":"2017-12-02","monthDay":1202,"ideas":[]},{"id":1490932668167,"fullname":"cccc","dateOfBirth":"2017-11-03","monthDay":1103,"ideas":[]}]}
+
+{"people":[
+{"id":1490932605888,"fullname":"aaaa","dateOfBirth":"2017-12-30","monthDay":1230,"ideas":[]},{"id":1490932645841,"fullname":"bbb","dateOfBirth":"2017-12-02","monthDay":1202,"ideas":[]},{"id":1490932668167,"fullname":"cccc","dateOfBirth":"2017-11-03","monthDay":1103,"ideas":[]}]}
+
+{"people":[
+{"id":1490932605888,"fullname":"aaaa","dateOfBirth":"2017-12-30","monthDay":1230,"ideas":[]},{"id":1490932645841,"fullname":"bbb","dateOfBirth":"2017-12-02","monthDay":1202,"ideas":[]},{"id":1490932668167,"fullname":"cccc","dateOfBirth":"2018-01-01","monthDay":101,"ideas":[]}]}
+
+
+
+{"people":[
+{"id":1490932605888,"fullname":"aaaa","dateOfBirth":"2017-12-30","monthDay":1230,"ideas":[]},{"id":1490932645841,"fullname":"bbb","dateOfBirth":"2017-12-02","monthDay":1202,"ideas":[]},{"id":1490932668167,"fullname":"cccc","dateOfBirth":"2018-01-01","monthDay":101,"ideas":[]}]}
+
+
+
+
+{"people":[
+{"id":1490932668167,"fullname":"cccc","dateOfBirth":"2018-01-01","monthDay":101,"ideas":[]},{"id":1490936028093,"fullname":"jjj","dateOfBirth":"2017-03-09","monthDay":309,"ideas":[{"id":1490969902246,"idea":"ttt","at":"","url":"","cost":""}]},{"id":1490933053988,"fullname":"gggg","dateOfBirth":"2017-03-31","monthDay":331,"ideas":[]},{"id":1490933253085,"fullname":"hhh","dateOfBirth":"2017-04-06","monthDay":406,"ideas":[]},{"id":1490933068218,"fullname":"jjjj","dateOfBirth":"2017-05-12","monthDay":512,"ideas":[]},{"id":1490933082879,"fullname":"uuuuu","dateOfBirth":"2017-11-16","monthDay":1116,"ideas":[]},{"id":1490932645841,"fullname":"bbb","dateOfBirth":"2017-12-02","monthDay":1202,"ideas":[]},{"id":1490932605888,"fullname":"aaaa","dateOfBirth":"2017-12-30","monthDay":1230,"ideas":[{"id":1490969675568,"idea":"ggg","at":"","url":"","cost":""}]},{"id":1490969250366,"fullname":"hhh","dateOfBirth":"2017-02-09","monthDay":209,"ideas":[]}]}
+
+
+
+{"reviews":[{"id":1491770770263,"name":"","rating":0,"img":null},{"id":1491770818852,"name":"item 1","rating":4,"img":"file:///var/mobile/Containers/Data/Application/9F3966A3-B670-47D7-A143-7A3E1125C9…
+
+
+{"reviews":[{"id":1491770893328,"name":"2","rating":5,"img":"file:///var/mobile/Containers/Data/Application/9F3966A3-B670-47D7-A143-7A3E1125C9E7/tmp/cdv_photo_008.png"},{"id":1491770895808,"name":"2",…
+
+
+
+Key	Value
+reviewr-gao00078	{"reviews":[{"id":1491770893328,"name":"2","rating":5,"img":"file:///var/mobile/Containers/Data/Application/9F3966A3-B670-47D7-A143-7A3E1125C9E7/tmp/cdv_photo_008.png"},{"id":1491770895808,"name":"2",…
+	
+    
+    reviewr-gao00078	{"reviews":[{"id":1491770893328,"name":"2","rating":5,"img":"file:///var/mobile/Containers/Data/Application/9F3966A3-B670-47D7-A143-7A3E1125C9E7/tmp/cdv_photo_008.png"},{"id":1491770895808,"name":"2",…
+    
+    reviewr-gao00078	{"reviews":[{"id":1491772407272,"name":"哈哈","rating":4,"img":"file:///var/mobile/Containers/Data/Application/607C31E8-B3A1-4854-9A61-B772A877D0A1/tmp/cdv_photo_011.png"},{"id":1491772432567,"name":"看看…
+
+
+
+{"reviews":[{"id":1491773234868,"name":"1","rating":1,
+"img":"file:///var/mobile/Containers/Data/Application/801EDD33-2882-4BA6-AC3E-9467AE78851D/tmp/cdv_photo_017.png"},{"id":1491773256601,"name":"2",…
+
+
+
+
+
+
+
+{
+    "baseurl": "https%3A%2F%2Fgriffis.edumedia.ca%2Fmad9022%2Fsteg%2F"
+    , "methods": [{
+        "name": "register"
+        , "endpoint": "register.php"
+        , "desc": "create a user account"
+        , "requires": ["user_name", "email"]
+    }, {
+        "name": "login"
+        , "endpoint": "login.php"
+        , "desc": "login to a user account"
+        , "requires": ["user_name", "email"]
+    }, {
+        "name": "listUsers"
+        , "endpoint": "user-list.php"
+        , "desc": "get a list of users and their ids. User must be logged in."
+        , "requires": ["user_id", "user_guid"]
+    }, {
+        "name": "listMessages"
+        , "endpoint": "msg-list.php"
+        , "desc": "get the list of messages for a user from the queue. User must be logged in"
+        , "requires": ["user_id", "user_guid"]
+    }, {
+        "name": "sendMessages"
+        , "endpoint": "msg-send.php"
+        , "desc": "upload an image to send to a user. User must be logged in. The image field must be a file."
+        , "requires": ["user_id", "user_guid", "recipient_id", "image"]
+    }, {
+        "name": "getMessage"
+        , "endpoint": "msg-get.php"
+        , "desc": "get the single image for the message. User must be logged in."
+        , "requires": ["user_id", "user_guid", "message_id"]
+    }, {
+        "name": "deleteMessage"
+        , "endpoint": "msg-delete.php"
+        , "desc": "delete a message and it's image from the queue on the server. User must be logged in."
+        , "requires": ["user_id", "user_guid", "message_id"]
+    }]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
