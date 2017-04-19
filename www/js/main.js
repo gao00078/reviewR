@@ -1,13 +1,13 @@
  /*****************************************************************
-         File: main.js
-         Author: Kai Gao
-         App Name: ReviewR
-         Description: 
-         Here is the sequence of logic for the app
+          File: main.js
+          Author: Kai Gao
+          App Name: ReviewR
+          Description: 
+          Here is the sequence of logic for the app
 
-         Version: 0.0.1
-         Updated: Arpil 8, 2017
-     *****************************************************************/
+          Version: 0.0.1
+          Updated: Arpil 8, 2017
+      *****************************************************************/
  var app = {
      localStorageList: {
          reviews: []
@@ -20,6 +20,13 @@
          document.addEventListener('deviceready', app.onDeviceReady);
      }
      , onDeviceReady: function () {
+         //hide the StatusBar
+         if (StatusBar.isVisible) {
+             StatusBar.hide();
+         }
+         else {
+             StatusBar.show();
+         }
          console.dir("enter onDeviceReady method");
          //show the main page when first load the app
          app.showPageOne();
@@ -81,29 +88,26 @@
              btnTakePic.addEventListener("touchstart", function (ev) {
                  navigator.camera.getPicture(app.successCallback, app.errorCallback, options);
              });
-             
          });
-         
          //delete button
          var btnDelete = document.getElementById("btnDeleteDetailReviewModal");
          btnDelete.addEventListener("touchstart", app.deleteReview);
-         
-         
          var btnSaveReview = document.getElementById("btnSaveAddReviewModal");
          btnSaveReview.addEventListener("touchstart", app.saveReview);
      }
-     , deleteReview: function(ev){
+     , deleteReview: function (ev) {
          console.log("enter delete function and show current review ID");
          console.log(app.currentReviewID);
          app.localStorageList = JSON.parse(localStorage.getItem("reviewr-gao00078"));
-         for(var i=0, len = app.localStorageList.reviews.length; i < len; i++){
-             if(app.currentReviewID == app.localStorageList.reviews[i].id){
+         for (var i = 0, len = app.localStorageList.reviews.length; i < len; i++) {
+             if (app.currentReviewID == app.localStorageList.reviews[i].id) {
                  console.log("find a match for deleteing");
-                 app.localStorageList.reviews.splice(i,1);
-                 localStorage.setItem("reviewr-gao00078",JSON.stringify(app.localStorageList));
-                 
+                 app.localStorageList.reviews.splice(i, 1);
+                 localStorage.setItem("reviewr-gao00078", JSON.stringify(app.localStorageList));
                  //dispatch to back button
-                 var myTouchEndEv = new CustomEvent("touchend", {bubbles:true});
+                 var myTouchEndEv = new CustomEvent("touchend", {
+                     bubbles: true
+                 });
                  var closeDetailModal = document.getElementById("closeDetailReviewModal");
                  closeDetailModal.dispatchEvent(myTouchEndEv);
                  //after deleting one review, refresh the page
@@ -112,54 +116,50 @@
                  break;
              }
          }
-         
      }
-     , saveReview: function(){
-        console.log("enter save review fucntion");
-         
+     , saveReview: function () {
+         console.log("enter save review fucntion");
          let reviewTemp = {
-             id: Date.now(),
-             name: document.getElementById("item").value,
-             rating: app.rating,
-             img: app.imgPath
-         }
-         //make sure all 3 fields have values
-         if(reviewTemp.name && reviewTemp.rating!=0 && reviewTemp.img){
+                 id: Date.now()
+                 , name: document.getElementById("item").value
+                 , rating: app.rating
+                 , img: app.imgPath
+             }
+             //make sure all 3 fields have values
+         if (reviewTemp.name && reviewTemp.rating != 0 && reviewTemp.img) {
              app.localStorageList.reviews.push(reviewTemp);
-             localStorage.setItem("reviewr-gao00078",JSON.stringify(app.localStorageList));
-//            process the info then dispatch click to the close button 
-             var myTouchEndEv = new CustomEvent("touchend", {bubbles:true});
+             localStorage.setItem("reviewr-gao00078", JSON.stringify(app.localStorageList));
+             //            process the info then dispatch click to the close button 
+             var myTouchEndEv = new CustomEvent("touchend", {
+                 bubbles: true
+             });
              var closeAddModal = document.getElementById("closeAddReviewModal");
              closeAddModal.dispatchEvent(myTouchEndEv);
-            //after adding one review, refresh the page
+             //after adding one review, refresh the page
              app.showPageOne();
-         
-         }else{
+         }
+         else {
              //generate a message to user and make the message disappear after 3 seconds
              let divparent = document.getElementById("addModalContent");
              let form = document.getElementById("id-form");
-             
              let divMsg = document.createElement("div");
              divMsg.classList.add("msg");
-             setTimeout(function(){
+             setTimeout(function () {
                  divMsg.classList.add("bad");
-             },20);
-             
+             }, 20);
              divMsg.textContent = "You missed at least one field!";
              //insert the message before the form.
              divparent.insertBefore(divMsg, form);
-             setTimeout((function(dparent,dm){
-                 return function(){
+             setTimeout((function (dparent, dm) {
+                 return function () {
                      dparent.removeChild(dm);
                  }
-             })(divparent,divMsg),3000);
+             })(divparent, divMsg), 3000);
          }
-         
-    
      }
-     , showReviewDetail: function(ev){
+     , showReviewDetail: function (ev) {
          console.log("herer");
-		 //the shevron being clicked on the main page, the shevron has a attribute with id inside of it.
+         //the shevron being clicked on the main page, the shevron has a attribute with id inside of it.
          let anchorTag = ev.currentTarget;
          let idForReviewClicked = anchorTag.getAttribute("id-review-clicked");
          //this is for delete button to find the matched review then do deleting thing
@@ -170,30 +170,26 @@
          console.log("enter show review details function");
          //since after clicking shevron, we enter the detail-reveiw modal, we know that there is at least one review in the localstroage. So I did not check if the app.localStorageList is empty here
          app.localStorageList = JSON.parse(localStorage.getItem("reviewr-gao00078"));
-         
-         for(var i=0, len = app.localStorageList.reviews.length; i < len; i++){
-             if(idForReviewClicked == app.localStorageList.reviews[i].id){
+         for (var i = 0, len = app.localStorageList.reviews.length; i < len; i++) {
+             if (idForReviewClicked == app.localStorageList.reviews[i].id) {
                  console.log("got a review match");
                  let ul = document.getElementById("review-detail-list");
-                 ul.innerHTML="";
+                 ul.innerHTML = "";
                  let liImg = document.createElement("li");
                  liImg.className = "table-view-cell";
                  let img = document.createElement("img");
                  img.className = "media-object pull-left";
                  img.classList.add("imgBig");
-                 
                  //img.src
                  img.src = app.localStorageList.reviews[i].img;
-//                 if(img && img.style){
-//                     img.style.height = "123%";
-//                     img.style.width = "123%";
-//                 }
-                 
+                 //                 if(img && img.style){
+                 //                     img.style.height = "123%";
+                 //                     img.style.width = "123%";
+                 //                 }
                  let liItem = document.createElement("li");
                  liItem.className = "table-view-cell";
                  //item name
-                 liItem.textContent ="Item: "+ app.localStorageList.reviews[i].name;
-                 
+                 liItem.textContent = "Item: " + app.localStorageList.reviews[i].name;
                  //draw stars
                  console.log("rating:");
                  console.log(app.localStorageList.reviews[i].rating);
@@ -201,15 +197,14 @@
                  liStars.className = "table-view-cell";
                  liStars.textContent = "Rating: ";
                  //draw rated stars
-                 for(var j=0; j<app.localStorageList.reviews[i].rating; j++){
+                 for (var j = 0; j < app.localStorageList.reviews[i].rating; j++) {
                      let span = document.createElement("span");
                      span.className = "starPageOne";
                      span.innerHTML = "&#x2605;";
                      liStars.appendChild(span);
-
                  }
                  //draw unrated stars
-                 for(var j=0; j<5-app.localStorageList.reviews[i].rating; j++){
+                 for (var j = 0; j < 5 - app.localStorageList.reviews[i].rating; j++) {
                      let span = document.createElement("span");
                      span.className = "starPageOne";
                      span.innerHTML = "&#x2606;";
@@ -220,71 +215,58 @@
                  ul.appendChild(liImg);
                  ul.appendChild(liItem);
                  ul.appendChild(liStars);
-                //once finding the match, no need to loop, OR cause error
+                 //once finding the match, no need to loop, OR cause error
                  break;
              }
          }
-
-         
      }
-     , showPageOne: function(){
-        console.log("enter showPageOne");
+     , showPageOne: function () {
+         console.log("enter showPageOne");
          let list = document.getElementById("review-list");
-         list.innerHTML="";
+         list.innerHTML = "";
          app.localStorageList = JSON.parse(localStorage.getItem("reviewr-gao00078"));
          //if there is nothing in localstorage, then assign am empty array to localStorageList on JS side
-
-         if(!app.localStorageList){
+         if (!app.localStorageList) {
              app.localStorageList = {
-                 reviews:[]
+                 reviews: []
              };
-         }else{
+         }
+         else {
              //sorted by creation time
-             app.localStorageList.reviews.sort(function(a,b){
+             app.localStorageList.reviews.sort(function (a, b) {
                  return a.id - b.id;
              })
          }
-         
-         app.localStorageList.reviews.forEach(function(review){
+         app.localStorageList.reviews.forEach(function (review) {
              let li = document.createElement("li");
              li.className = "table-view-cell media";
-             
              let img = document.createElement("img");
              img.className = "media-object pull-left";
              img.classList.add("imgSmall");
-             
-             img.src =  review.img;
-//             if(img && img.style){
-//                 img.style.height = "33%";
-//                 img.style.width = "33%";
-//             }
-             
-             
+             img.src = review.img;
+             //             if(img && img.style){
+             //                 img.style.height = "33%";
+             //                 img.style.width = "33%";
+             //             }
              let divparent = document.createElement("div");
              divparent.className = "media-body ";
              divparent.textContent = review.name;
-             
              let divChildStars = document.createElement("div");
              divChildStars.className = "allStarsPageOne";
-//             divChildStars.innerHTML = "Number of stars: " + review.rating;
+             //             divChildStars.innerHTML = "Number of stars: " + review.rating;
              //draw stars on each review on the main page
-             for(var i=0; i<review.rating; i++){
+             for (var i = 0; i < review.rating; i++) {
                  let span = document.createElement("span");
                  span.className = "starPageOne";
                  span.innerHTML = "&#x2605;";
                  divChildStars.appendChild(span);
-                 
              }
-             for(var i=0; i<5-review.rating; i++){
+             for (var i = 0; i < 5 - review.rating; i++) {
                  let span = document.createElement("span");
                  span.className = "starPageOne";
                  span.innerHTML = "&#x2606;";
                  divChildStars.appendChild(span);
-                 
              }
-             
-             
-             
              let a = document.createElement("a");
              a.className = "navigate-right";
              a.href = "#detailsReviewModal";
@@ -292,19 +274,13 @@
              //when clicking on the anchor tag, opens the detail-review modal. since the anchor tag is the clicked target,
              //we can access the clicked target's attribute. then we can reset and assign this to the global variable app.currentReviewID, which will be used to find the match when deleting that review.
              a.setAttribute("id-review-clicked", review.id);
-             
              a.addEventListener("touchstart", app.showReviewDetail);
-             
              divparent.appendChild(divChildStars);
              divparent.appendChild(a);
              li.appendChild(img);
              li.appendChild(divparent);
-             
              list.appendChild(li);
          })
-         
-         
-         
      }
      , cancelAddModal: function () {
          var myTouchEv = new CustomEvent("touchend", {
@@ -327,20 +303,15 @@
          li.className = "table-view-cell";
          let img = document.createElement("img");
          img.classList.add("imgBig");
-         
          img.src = imageURI;
-//         img.src = "data:image/png;base64,"+imageURI;
+         //         img.src = "data:image/png;base64,"+imageURI;
          //assign imgage path to the global variable
-
          app.imgPath = imageURI;
-//         app.imgPath = "data:image/png;base64,"+imageURI;
-         
-         
-//         if(img && img.style){
-//                 img.style.height = "123%";
-//                 img.style.width = "123%";
-//             }
-         
+         //         app.imgPath = "data:image/png;base64,"+imageURI;
+         //         if(img && img.style){
+         //                 img.style.height = "123%";
+         //                 img.style.width = "123%";
+         //             }
          li.appendChild(img);
          ul.appendChild(li);
          //add the pic right before all the buttons 
@@ -356,17 +327,18 @@
      }
      , addListeners: function () {
           [].forEach.call(app.stars, function (star, index) {
-             star.addEventListener('touchstart', (function (idx) {
-                 console.log('adding listener', idx);
-                 return function () {
-                     app.rating = idx + 1;
-                     console.log('Rating is now', app.rating)
-                     app.setRating();
-                 }
-             })(index));
-         });
-     }
-     //decide and show stars with or wiout being rated on add-review page 
+                 star.addEventListener('touchstart', (function (idx) {
+                     console.log('adding listener', idx);
+                     return function () {
+                         app.rating = idx + 1;
+                         console.log('Rating is now', app.rating)
+                         app.setRating();
+                     }
+                 })(index));
+             });
+         }
+         //decide and show stars with or wiout being rated on add-review page 
+         
      , setRating: function () {
            [].forEach.call(app.stars, function (star, index) {
              if (app.rating > index) {
